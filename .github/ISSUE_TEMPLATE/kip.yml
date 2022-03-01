@@ -1,0 +1,51 @@
+name: New KIP
+description: Use this template to submit a new KIP draft
+title: "[KIP]: "
+labels: ["draft"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill the form to submit your KIP.
+  - type: input
+    id: contact
+    attributes:
+      label: Proposal Owner Address
+      description: Proposal owner's ethereum address.
+      placeholder: ex. 0x9109BcE756C439685c0D43F6bf8Df42225b0400D
+    validations:
+      required: true
+  - type: textarea
+    id: abstract
+    attributes:
+      label: Abstract
+      description: Please summarize your proposal with few sentences.
+      placeholder: Summarize your proposal
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: What category of your proposal are you offering?
+      options:
+        - Governance
+        - Parnership
+        - Meta
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Please describe your proposal in detail.
+  - type: textarea
+    id: tx
+    attributes:
+      label: Transaction
+      description: Please attach the transaction as ABI if available.
+  - type: input
+    id: pr
+    attributes:
+      label: PR Link
+      description: Please attach the PR link if available.
